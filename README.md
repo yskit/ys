@@ -16,7 +16,7 @@ YS 奉行『约定优于配置』，按照一套统一的约定进行应用开�
 
 [Sails](https://sailsjs.com/) 是和 YS 一样奉行『约定优于配置』的框架，扩展性也非常好。但是相比 YS，Sails 支持 Blueprint REST API、[WaterLine](https://github.com/balderdashy/waterline) 这样可扩展的 ORM、前端集成、WebSocket 等，但这些功能都是由 Sails 提供的。
 
-[Egg.js](https://github.com/eggjs/egg) 与 YS 的设计理念基本相同，不同的时候，YS解决了Egg.js所没有的生命周期问题，同时可以通过[ys-pg-dbo](https://github.com/yskit/ys-pg-dbo)插件进行内部线程的事物回滚、物理回滚和API回滚等。YS在设计上，特别是在AGENT层的架构，独树一帜，我们约定了一种进程之间的`微服务协议`通讯模式，比如`agent://test-service/api/user/19222`规范来获取进程处理后的数据。还有一点与Egg.js不同的是，在插件的设计上，我们对Agent层的规范扩展更加到位。
+[Egg.js](https://github.com/eggjs/egg) 与 YS 的设计理念基本相同，不同的时候，YS解决了Egg.js所没有的生命周期问题，同时可以通过[ys-pg-dbo](https://github.com/yskit/ys-pg-dbo)插件进行内部线程的事物回滚、物理回滚和API回滚等。YS在设计上，特别是在AGENT层的架构，独树一帜，我们约定了一种进程之间的`微服务协议`通讯模式，比如`ipc://agent/api/user/19222`规范来获取进程处理后的数据。还有一点与Egg.js不同的是，在插件的设计上，我们对Agent层的规范扩展更加到位。
 
 # 特性
 

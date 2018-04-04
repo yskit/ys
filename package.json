@@ -1,4 +1,5 @@
 {
   "name": "ys",
+  "version": "1.0.0",
   "description": "YS 一套基于nodejs的渐进式开发应用架构"
 }
