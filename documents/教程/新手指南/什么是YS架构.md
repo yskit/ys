@@ -16,7 +16,7 @@ Egg 奉行『**约定优于配置**』，按照一套统一的约定进行应用
 
 [Sails](https://sailsjs.com/) 是和 YS 一样奉行『约定优于配置』的框架，扩展性也非常好。但是相比 YS，Sails 支持 Blueprint REST API、WaterLine 这样可扩展的 ORM、前端集成、WebSocket 等，但这些功能都是由 Sails 提供的。而 YS 不直接提供功能，只是集成各种功能插件，比如实现 [ys-pg-dbo](https://github.com/yskit/ys-pg-dbo) [ys-pg-koa-router](https://github.com/yskit/ys-pg-koa-router) [ys-pg-micro-router](https://github.com/yskit/ys-pg-micro-router) 等这样的插件，再使用 sails-ys 框架整合这些插件就可以替代 Sails 了。
 
-[Egg.js](https://eggjs.org) 与 YS 具有异曲同工之妙，但是 YS 比 Egg.js 强大之处在于 YS 具有生命周期，同时支持 Agent 的 service 请求过程开发。YS 不定义使用何种 framework 与 router，而是同样提供一整套模块或者插件来支持。所以，理论上，YS架构仅仅是处理整体的流程，而至于规范，都是通过简单定义framework来实现。比如我们使用 [ys-fw-koa](https://github.com/yskit/ys-fw-koa) 来作为我们的应用架构，或者使用 [ys-fw-micro](https://github.com/yskit/ys-fw-micro) 来启动我们的微服务架构。YS的扩展性比Egg更加强大，因为它不仅仅提供了 app 层的开发，而且提供 agent 层的开发，当然，这些都是定义在framework上的。
+[Egg.js](https://eggjs.org) 与 YS 具有异曲同工之妙，但是 YS 比 Egg.js 强大之处在于 YS 具有生命周期，同时支持 Agent 的 service 请求过程开发。YS 不定义使用何种 framework 与 router，而是同样提供一整套模块或者插件来支持。所以，理论上，YS架构仅仅是处理整体的流程，而至于规范，都是通过简单定义framework来实现。比如我们使用 [ys-fw-koa](https://github.com/yskit/ys-fw-koa) 来作为我们的应用架构，或者使用 [ys-fw-micro](https://github.com/yskit/ys-fw-micro) 来启动我们的微服务架构。YS的扩展性比Egg更加强大，因为它不仅仅提供了 app 层的开发，而且提供 agent 层的开发，当然，这些都是定义在framework上的。
 
 # 特性
 
